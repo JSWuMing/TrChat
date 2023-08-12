@@ -33,7 +33,7 @@ object CommandMute {
 
     @Awake(LifeCycle.ENABLE)
     fun c() {
-        command("mute", description = "Mute a player", permission = "trchat.command.mute") {
+        command("trmute", description = "Mute a player", permission = "trchat.command.mute") {
             dynamic("player") {
                 suggest {
                     BukkitProxyManager.getPlayerNames().keys.toList()

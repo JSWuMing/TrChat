@@ -58,7 +58,7 @@ object CommandMute {
                             return@execute sender.sendLang("Command-Player-Not-Exist")
                         }
                         val data = player.data
-                        val de = Demand("trmute $argument")
+                        val de = Demand("mute $argument")
                         if (de.tags.contains("cancel")) {
                             data.updateMuteTime(0)
                             sender.sendLang("Mute-Cancel-Muted-Player", player.name!!)
